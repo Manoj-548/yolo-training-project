@@ -1,0 +1,10 @@
+# Custom configuration for OCR inspection
+model_path: 'runs/train/weights/best.pt'
+data: 'data.yaml'  # Path to data.yaml for OCR dataset
+conf: 0.3
+iou: 0.5
+show_labels: true
+show_conf: true
+plots: false
+ocr_lang: 'en'  # OCR language for all keyboard characters (English includes most)
+# Add any other custom settings here

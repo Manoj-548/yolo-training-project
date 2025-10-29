@@ -1,0 +1,78 @@
+# Project Configuration for OCR and Non-OCR Projects
+# This file configures the project for flexible OCR inspection and training on various datasets
+# Designed for portability across machines with Git cloning and Microsoft account integration
+
+# General Settings
+project_name: "OCR_Inspection_Project"
+version: "1.0.0"
+description: "Flexible OCR inspection and training pipeline for detecting and extracting text from images, adaptable to new characters and datasets."
+
+# Recovery Settings
+recovery:
+  auto_download_weights: true
+  generate_synthetic_data: true
+  fallback_to_defaults: true
+  cloud_backup: "onedrive"  # Options: onedrive, github, azure, none
+  onedrive_path: "Documents/OCR_Project_Backup"
+  github_repo: "your-username/ocr-project"  # Replace with actual repo
+
+# Data Sources
+data_sources:
+  primary: "local"
+  cloud_backup: "onedrive"
+  onedrive_path: "Documents/OCR_Project_Backup"
+  backup_urls:
+    yolov8n_weights: "https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt"
+    sample_dataset: "https://example.com/sample_ocr_dataset.zip"  # Replace with actual URL
+
+# OCR Settings
+ocr:
+  enabled: true
+  engine: "easyocr"  # Options: easyocr, tesseract
+  language: "en"  # Language for OCR (en covers most keyboard characters)
+  fallback_engine: "tesseract"  # Fallback if primary engine fails
+  min_confidence: 0.5  # Minimum confidence for OCR text extraction
+
+# Model Settings
+model:
+  path: "runs/train/weights/best.pt"
+  conf: 0.3
+  iou: 0.5
+  show_labels: true
+  show_conf: true
+  plots: false
+
+# Dataset Settings
+dataset:
+  data_yaml: "data.yaml"
+  synthetic_generation: true
+  classes: 62  # 0-9, A-Z, a-z for keyboard characters
+  class_names: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+# Training Settings
+training:
+  epochs: 50
+  imgsz: 640
+  batch: 16
+  device: "cpu"  # Use "0" for GPU if available
+  patience: 5
+  resume: true
+
+# Feature Extraction Settings
+feature_extraction:
+  enabled: true
+  output_format: "json"
+  include_ocr_text: true
+  minimal_training_examples: true  # Enable easy training with few examples
+
+# Window Management
+windows:
+  new_window_for_non_ocr: false  # Do not open new windows unless explicitly requested
+  initiate_new_project: false  # Only start new projects when user initiates
+
+# Advanced Settings
+advanced:
+  torch_weights_only: false  # Allow loading models with additional data
+  safe_globals: true  # Enable safe globals for PyTorch loading
+  logging: true
+  system_stats: true
