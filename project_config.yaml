@@ -3,18 +3,18 @@
 # Designed for portability across machines with Git cloning and Microsoft account integration
 
 # General Settings
-project_name: "OCR_Inspection_Project"
-version: "1.0.0"
-description: "Flexible OCR inspection and training pipeline for detecting and extracting text from images, adaptable to new characters and datasets."
+project_name: "Keyboard_Character_OCR"
+version: "2.0.0"
+description: "OCR pipeline for detecting and extracting standard keyboard characters, including numbers, letters (both cases), and all standard punctuation marks (95 classes total)."
 
 # Recovery Settings
 recovery:
   auto_download_weights: true
   generate_synthetic_data: true
   fallback_to_defaults: true
-  cloud_backup: "onedrive"  # Options: onedrive, github, azure, none
+  cloud_backup: "github"  # Options: onedrive, github, azure, none
   onedrive_path: "Documents/OCR_Project_Backup"
-  github_repo: "your-username/ocr-project"  # Replace with actual repo
+  github_repo: "Manoj-548/yolo-training-project"  # Current repository
 
 # Data Sources
 data_sources:
@@ -46,8 +46,21 @@ model:
 dataset:
   data_yaml: "data.yaml"
   synthetic_generation: true
-  classes: 62  # 0-9, A-Z, a-z for keyboard characters
-  class_names: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  classes: 92  # 0-9, A-Z, a-z, and punctuation marks
+  class_names: [
+    # Numbers (10)
+    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+    # Uppercase letters (26)
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+    # Lowercase letters (26)
+    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+    # Punctuation marks (30)
+    "!", "@", "#", "$", "%", "^", "&", "*", "(", ")",
+    "-", "_", "+", "=", "{", "}", "[", "]", "|", "\\",
+    ":", ";", "\"", "'", "<", ">", ",", ".", "?", "/"
+  ]
 
 # Training Settings
 training:

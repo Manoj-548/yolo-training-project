@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# Training artifacts
+runs/**/predict*/
+*.pt
+!yolov8n.pt
+!yolov8n-seg.pt
+
+# Training metrics
+training_metrics.json
+
+# Logs
+*.log
+
+# Dataset
+images/*/
+labels/*/
+!images/.gitkeep
+!labels/.gitkeep
+
+# Temporary files
+*.tmp

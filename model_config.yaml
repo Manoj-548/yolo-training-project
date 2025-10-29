@@ -1,0 +1,53 @@
+# YOLOv8 Configuration for Keyboard Character Detection
+model_config:
+  backbone: "yolov8s"  # Using YOLOv8 small for better accuracy with character details
+  input_size: 800      # Increased for better small character detection
+  anchors: "auto"
+  
+training_config:
+  epochs: 150          # Increased epochs for better convergence
+  batch_size: 32       # Increased batch size for stable training
+  initial_learning_rate: 0.005  # Reduced for more stable training
+  final_learning_rate: 0.0001
+  warmup_epochs: 5     # Increased warmup for stability
+  momentum: 0.937
+  weight_decay: 0.0005
+  
+augmentation:
+  hsv_h: 0.01   # Reduced hue variation for character clarity
+  hsv_s: 0.5    # Moderate saturation
+  hsv_v: 0.3    # Moderate value/brightness
+  degrees: 3.0   # Reduced rotation for readability
+  translate: 0.15
+  scale: 0.4
+  shear: 0.1    # Added slight shear for variation
+  perspective: 0.0001  # Minimal perspective change
+  flipud: 0.0   # No vertical flip for characters
+  fliplr: 0.0   # No horizontal flip for characters
+  mosaic: 0.8   # Reduced mosaic for better character recognition
+  mixup: 0.1    # Light mixup for regularization
+  copy_paste: 0.3  # Increased for better character placement
+  
+callbacks:
+  early_stopping:
+    patience: 15
+    min_delta: 0.001
+  model_checkpoint:
+    monitor: "val/mAP50"
+    save_best: true
+    save_last: true
+    
+validation:
+  val_interval: 1
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_detections: 300
+  
+inference:
+  conf_threshold: 0.5
+  iou_threshold: 0.45
+  max_detections: 100
+  
+export:
+  formats: ["onnx", "openvino"]  # Export formats for deployment
+  dynamic_batch: true
