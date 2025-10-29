@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yolo-model
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: yolo-model
+  template:
+    metadata:
+      labels:
+        app: yolo-model
+    spec:
+      containers:
+      - name: yolo-model
+        image: yoloregistry.azurecr.io/yolo-model:latest
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+            memory: "8Gi"
+            cpu: "4"
+          requests:
+            memory: "4Gi"
+            cpu: "2"
+        ports:
+        - containerPort: 8000
+        env:
+        - name: YOLO_DEVICE
+          value: "0"
+        - name: YOLO_RESULTS_DIR
+          value: "/data/results"
+        volumeMounts:
+        - name: model-storage
+          mountPath: /data
+      volumes:
+      - name: model-storage
+        persistentVolumeClaim:
+          claimName: yolo-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yolo-model-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8000
+  selector:
+    app: yolo-model
