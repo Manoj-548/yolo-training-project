@@ -1,0 +1,122 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Machine Learning / Data Science
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.ckpt
+*.pth
+*.pt
+
+# Data files
+data/
+datasets/
+*.csv
+*.json
+*.xml
+*.zip
+*.tar.gz
+*.rar
+
+# Model outputs
+output/
+models/
+checkpoints/
+logs/
+wandb/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+roboflow_data/
+output/
+
+# Legacy entries (keeping for compatibility)
+.sf/
+.sfdx/
+.localdev/
+/IlluminatedCloud/
+/out/
+target/
+node_modules/
+/.illuminatedCloud/
+**/tsconfig*.json
+**/*.tsbuildinfo
