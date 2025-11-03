@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "pip",
+            "args": [
+                "install",
+                "-r",
+                "requirements.txt"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Training",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "ocr.py",
+                "--mode",
+                "train",
+                "--data_path",
+                "./roboflow_data"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Linting",
+            "type": "shell",
+            "command": "pylint",
+            "args": [
+                "ocr.py"
+            ],
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

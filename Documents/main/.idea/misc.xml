@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ocr-project.iml" filepath="$PROJECT_DIR$/.idea/ocr-project.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (venv)" project-jdk-type="Python SDK" />
+  <component name="PythonCompatibilityInspectionProfiles">
+    <profile version="1.0">
+      <option name="mySdkName" value="Python 3.11 (venv)" />
+    </profile>
+  </component>
+  <component name="PyPackaging">
+    <option name="earlyReleasesAsUpgrades" value="true" />
+    <option name="showAllLatestPythonVersions" value="true" />
+  </component>
+</project>

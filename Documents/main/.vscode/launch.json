@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: OCR Training",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ocr.py",
+            "args": [
+                "--mode", "train",
+                "--data_path", "./roboflow_data"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: OCR Inference",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ocr.py",
+            "args": [
+                "--mode", "infer",
+                "--image_path", "${input:imagePath}",
+                "--weights", "output/model_final.pth"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "imagePath",
+            "description": "Path to image for inference",
+            "default": "test_image.jpg",
+            "type": "promptString"
+        }
+    ]
+}

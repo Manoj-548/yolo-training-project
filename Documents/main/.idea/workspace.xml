@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17a256e4-a3bb-4687-8ee9-4f6c865f2af3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/AI-For-Beginners" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Manoj-548&quot;,
+      &quot;label&quot;: &quot;documentation&quot;
+    },
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Manoj-548&quot;,
+      &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;,
+      &quot;sort&quot;: &quot;NEWEST&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Manoj-548&quot;,
+    &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;,
+    &quot;sort&quot;: &quot;NEWEST&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AUTOMATIC1111/stable-diffusion-webui.git&quot;,
+    &quot;accountId&quot;: &quot;0e41e41d-d95c-4e15-993a-983c560826ee&quot;
+  }
+}</component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="moduleWorkspaceSettings">
+      <map>
+        <entry key="main">
+          <value>
+            <ModuleWorkspaceSettings>
+              <option name="moduleContentsLastModified" value="1762145396064" />
+            </ModuleWorkspaceSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="apexLogLevel" value="FINEST" />
+                  <option name="name" value="Anonymous Apex 1" />
+                  <option name="nbaLogLevel" value="ERROR" />
+                  <option name="profilingLogLevel" value="ERROR" />
+                  <option name="systemLogLevel" value="FINEST" />
+                  <option name="validationLogLevel" value="ERROR" />
+                  <option name="visualforceLogLevel" value="FINE" />
+                  <option name="waveLogLevel" value="ERROR" />
+                  <option name="workflowLogLevel" value="ERROR" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+            <option name="selectedSavedDocumentIndex" value="0" />
+            <option name="showScriptInOutput" value="false" />
+          </AnonymousApexSettings>
+        </option>
+        <option name="logAnalyzerSettings">
+          <LogAnalyzerSettings>
+            <option name="selectedTabIndex" value="1" />
+          </LogAnalyzerSettings>
+        </option>
+        <option name="retrieveAndMergeDefault" value="false" />
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="34xBVf4QkQn4cCPEGkCwW66TC7b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sweep_tutorial.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;dev.sweep.assistant.data.RecentlyUsedFiles&quot;: &quot;README.md&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;sweep.chatMode&quot;: &quot;Agent&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DAPConfiguration" factoryName="DAPConfiguration">
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ZIGBRAINS_BUILD" factoryName="ZIGBRAINS_BUILD">
+      <ZigBrainsOption name="workingDirectory" value="C:\Users\Acer\Documents\main" />
+      <envs />
+      <ZigBrainsOption name="buildSteps" value="" />
+      <ZigBrainsOption name="compilerArgs" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ZIGBRAINS_RUN" factoryName="ZIGBRAINS_RUN">
+      <ZigBrainsOption name="workingDirectory" value="C:\Users\Acer\Documents\main" />
+      <envs />
+      <ZigBrainsOption name="filePath" value="" />
+      <ZigBrainsNestedOption name="optimization">
+        <ZigBrainsOption name="level" value="Debug" />
+        <ZigBrainsOption name="forced" value="false" />
+      </ZigBrainsNestedOption>
+      <ZigBrainsOption name="compilerArgs" value="" />
+      <ZigBrainsOption name="exeArgs" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ZIGBRAINS_TEST" factoryName="ZIGBRAINS_TEST">
+      <ZigBrainsOption name="workingDirectory" value="C:\Users\Acer\Documents\main" />
+      <envs />
+      <ZigBrainsOption name="filePath" value="" />
+      <ZigBrainsNestedOption name="optimization">
+        <ZigBrainsOption name="level" value="Debug" />
+        <ZigBrainsOption name="forced" value="false" />
+      </ZigBrainsNestedOption>
+      <ZigBrainsOption name="compilerArgs" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17a256e4-a3bb-4687-8ee9-4f6c865f2af3" name="Changes" comment="" />
+      <created>1762145394024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762145394024</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

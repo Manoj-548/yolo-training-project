@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="GENERAL_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="IlluminatedCloud" name="Illuminated Cloud">
+      <configuration>
+        <option name="defaultSourceRootUrl" value="file://$MODULE_DIR$/venv/Lib/site-packages/numpy/f2py/src" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AI-For-Beginners/etc/quiz-app/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ML-Projects-with-Deployment/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml-serving-template/consumers/fasttext/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ml-serving-template/producers/short-texts-clustering/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/easyocr/DBNet/assets/ops/dcn/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/numpy/f2py/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/numpy/f2py/tests/src" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/pip-25.2.dist-info/licenses/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/sklearn/svm/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/venv/Lib/site-packages/sklearn/utils/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.12 (main)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="OCR_Major_Project" />
+  </component>
+</module>
