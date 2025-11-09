@@ -1,0 +1,22 @@
+# Core PyTorch
+torch>=1.9.0
+torchvision>=0.10.0
+torchaudio>=0.9.0
+
+# Image processing
+opencv-python>=4.5.0
+Pillow>=8.0.0
+
+# Utils
+numpy>=1.21.0
+matplotlib>=3.4.0
+PyYAML>=5.4.0
+tqdm>=4.62.0
+
+# Metrics and logging
+scikit-learn>=1.0.0
+tensorboard>=2.7.0
+
+# Model Optimization Libraries
+torch-pruning>=1.3.0
+optuna>=3.0.0

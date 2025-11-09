@@ -1,0 +1,38 @@
+# Training Configuration
+num_epochs: 100
+batch_size: 16
+learning_rate: 0.001
+lr_step_size: 30
+lr_gamma: 0.1
+
+# Model Configuration
+backbone: 'resnet50'
+img_size: 640
+num_workers: 4
+
+# Training Parameters
+conf_threshold: 0.5
+iou_threshold: 0.5
+
+# Loss Weights
+lambda_coord: 5.0
+lambda_noobj: 0.5
+
+# Optimization Parameters
+pruning_ratio: 0.3
+quantization_enabled: false
+bayesian_opt_trials: 50
+
+# Bayesian Optimization Ranges
+lr_range: [0.0001, 0.01]
+batch_size_range: [8, 32]
+pruning_ratio_range: [0.1, 0.5]
+
+# Directories
+log_dir: 'logs'
+checkpoint_dir: 'checkpoints'
+tensorboard_dir: 'logs/tensorboard'
+optimization_dir: 'optimization_results'
+
+# Data Configuration
+data_dir: 'data/synthetic_dataset'
